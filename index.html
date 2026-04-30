@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAIDHAAN YOUTH CHAMPIONSHIP 2026</title>
+    <!-- We are using Tailwind CSS, a popular styling framework, to make it look good easily -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Added a Modern Geometric Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Custom smooth scrolling and modern font application */
+        html {
+            scroll-behavior: smooth;
+            font-family: 'Outfit', sans-serif;
+        }
+        /* Hide scrollbar for gallery if needed, keep clean */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #A1D028;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-[#A1D028] selection:text-[#0B2015]">
+
+    <!-- Modern Floating Navigation Bar -->
+    <nav class="fixed top-4 left-0 right-0 z-50 px-4 flex justify-center transition-all duration-300">
+        <div class="w-full max-w-6xl bg-white/80 backdrop-blur-xl shadow-lg shadow-slate-200/50 border border-white/80 rounded-full px-4 md:px-6 py-3 flex justify-between items-center">
+            <div class="flex-shrink-0 flex items-center gap-3">
+                <img src="./MATCH FINAL SCORE.png" alt="Maidhaan Logo" class="h-10 w-auto rounded-full shadow-sm" onerror="this.onerror=null; this.src='https://placehold.co/100x100/0B2015/A1D028?text=Logo';">
+                <span class="font-extrabold text-xl md:text-2xl text-[#0B2015] tracking-wide">MAIDHAAN</span>
+            </div>
+            <div class="hidden lg:flex space-x-1 items-center bg-slate-100/50 p-1 rounded-full border border-slate-200/50">
+                <a href="#home" class="text-slate-600 hover:text-[#0B2015] hover:bg-white px-3 py-2 rounded-full text-sm font-semibold transition-all">HOME</a>
+                <a href="#about" class="text-slate-600 hover:text-[#0B2015] hover:bg-white px-3 py-2 rounded-full text-sm font-semibold transition-all">ABOUT</a>
+                <a href="#rules" class="text-slate-600 hover:text-[#0B2015] hover:bg-white px-3 py-2 rounded-full text-sm font-semibold transition-all">RULES</a>
+                <a href="#teams" class="text-slate-600 hover:text-[#0B2015] hover:bg-white px-3 py-2 rounded-full text-sm font-semibold transition-all">TEAMS</a>
+                <a href="#fixtures" class="text-slate-600 hover:text-[#0B2015] hover:bg-white px-3 py-2 rounded-full text-sm font-semibold transition-all">FIXTURES</a>
+                <a href="#standings" class="text-slate-600 hover:text-[#0B2015] hover:bg-white px-3 py-2 rounded-full text-sm font-semibold transition-all">STANDINGS</a>
+                <a href="#gallery" class="text-slate-600 hover:text-[#0B2015] hover:bg-white px-3 py-2 rounded-full text-sm font-semibold transition-all">GALLERY</a>
+                <a href="#contact" class="text-slate-600 hover:text-[#0B2015] hover:bg-white px-3 py-2 rounded-full text-sm font-semibold transition-all">CONTACT</a>
+            </div>
+            <div class="hidden md:block">
+                <button onclick="openModal()" class="bg-[#0B2015] text-[#A1D028] hover:bg-[#A1D028] hover:text-[#0B2015] px-6 py-2.5 rounded-full text-sm font-bold transition-all shadow-md hover:shadow-xl transform hover:-translate-y-0.5 inline-block">Register Team</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sleek Hero Section with Rounded Bottom -->
+    <header id="home" class="relative pt-32 pb-20 md:pt-40 md:pb-32 flex items-center justify-center min-h-[90vh] bg-[#0B2015] rounded-b-[2.5rem] md:rounded-b-[4rem] mx-2 md:mx-4 shadow-2xl overflow-hidden mt-2">
+        <!-- Modern Abstract Background Glow -->
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full overflow-hidden pointer-events-none">
+            <div class="absolute top-[-20%] left-[-10%] w-[50%] h-[50%] rounded-full bg-[#499F31] opacity-20 blur-[120px]"></div>
+            <div class="absolute bottom-[-10%] right-[-10%] w-[60%] h-[60%] rounded-full bg-[#A1D028] opacity-10 blur-[150px]"></div>
+            <div class="absolute inset-0 opacity-[0.03] bg-[url('https://www.transparenttextures.com/patterns/noise-lines.png')]"></div>
+        </div>
+        
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 flex flex-col items-center">
+            
+            <div class="relative group mb-8">
+                <div class="absolute -inset-1 bg-gradient-to-r from-[#A1D028] to-[#499F31] rounded-full blur opacity-40 group-hover:opacity-70 transition duration-500"></div>
+                <img src="./MATCH FINAL SCORE.png" alt="Championship Logo" class="relative h-28 md:h-40 w-auto rounded-full border-[3px] border-[#A1D028]/50 transform group-hover:scale-105 transition duration-500" onerror="this.onerror=null; this.src='https://placehold.co/400x400/0B2015/A1D028?text=Maidhaan+Logo';">
+            </div>
+            
+            <span class="inline-block py-1 px-3 rounded-full bg-[#143B26] border border-[#1f5939] text-[#A1D028] font-bold tracking-widest uppercase text-xs md:text-sm mb-6 shadow-inner">Official Tournament</span>
+            
+            <h1 class="text-5xl md:text-7xl lg:text-8xl font-black text-white tracking-tight mb-6 uppercase leading-none">
+                MAIDHAAN YOUTH <br/>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#A1D028] to-[#499F31]">CHAMPIONSHIP 2026</span>
+            </h1>
+            
+            <p class="text-lg md:text-xl text-slate-300 mb-12 max-w-2xl font-light">
+                The biggest youth futsal event in Kudahuvadhoo. Bring your best game, make memories, and claim the trophy.
+            </p>
+            
+            <!-- Modern Glassmorphic Countdown -->
+            <div class="flex flex-wrap justify-center gap-4 md:gap-6 mb-12">
+                <div class="bg-white/5 backdrop-blur-md rounded-2xl p-4 w-20 md:w-28 border border-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.3)]">
+                    <span id="days" class="text-3xl md:text-5xl font-black text-white block mb-1">00</span>
+                    <span class="text-[10px] md:text-xs uppercase tracking-widest text-[#A1D028] font-bold">Days</span>
+                </div>
+                <div class="bg-white/5 backdrop-blur-md rounded-2xl p-4 w-20 md:w-28 border border-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.3)]">
+                    <span id="hours" class="text-3xl md:text-5xl font-black text-white block mb-1">00</span>
+                    <span class="text-[10px] md:text-xs uppercase tracking-widest text-[#A1D028] font-bold">Hours</span>
+                </div>
+                <div class="bg-white/5 backdrop-blur-md rounded-2xl p-4 w-20 md:w-28 border border-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.3)]">
+                    <span id="minutes" class="text-3xl md:text-5xl font-black text-white block mb-1">00</span>
+                    <span class="text-[10px] md:text-xs uppercase tracking-widest text-[#A1D028] font-bold">Mins</span>
+                </div>
+                <div class="bg-white/5 backdrop-blur-md rounded-2xl p-4 w-20 md:w-28 border border-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.3)]">
+                    <span id="seconds" class="text-3xl md:text-5xl font-black text-white block mb-1">00</span>
+                    <span class="text-[10px] md:text-xs uppercase tracking-widest text-[#A1D028] font-bold">Secs</span>
+                </div>
+            </div>
+
+            <button onclick="openModal()" class="bg-[#A1D028] text-[#0B2015] hover:bg-white hover:text-[#0B2015] px-8 py-4 rounded-full text-lg font-black transition-all shadow-xl hover:shadow-2xl transform hover:-translate-y-1 inline-block uppercase tracking-widest">
+                Register Your Team Now
+            </button>
+        </div>
+    </header>
+
+    <!-- Bento-Box Style About Section -->
+    <section id="about" class="py-20 md:py-32">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-[#499F31] font-bold tracking-widest uppercase text-sm">Discover</span>
+                <h2 class="text-3xl md:text-5xl font-black text-[#0B2015] mt-2 mb-6 uppercase">About The Tournament</h2>
+                <p class="text-slate-500 max-w-2xl mx-auto text-lg">
+                    Organized by MAIDHAAN, bringing together the best young talent. We focus on sportsmanship, community building, and athletic excellence.
+                </p>
+            </div>
+            
+            <!-- Modern Bento Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Large Card (Now with Image) -->
+                <div class="md:col-span-2 bg-white rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl transition-all duration-300 group relative overflow-hidden flex flex-col md:flex-row">
+                    <div class="p-8 md:p-10 md:w-1/2 flex flex-col justify-center z-10 bg-white">
+                        <div class="w-14 h-14 bg-[#EAF4EC] text-[#499F31] rounded-2xl flex items-center justify-center mb-6 shadow-sm">
+                            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        </div>
+                        <h3 class="font-black text-2xl text-[#0B2015] mb-2 uppercase">Official Venue</h3>
+                        <p class="text-slate-500 text-lg">AKIREYRE FUTSAL GROUND<br><span class="text-[#499F31] font-semibold text-sm">Kudahuvadhoo</span></p>
+                    </div>
+                    <!-- Venue Image Side -->
+                    <div class="md:w-1/2 relative min-h-[250px] md:min-h-full overflow-hidden">
+                        <div class="absolute inset-0 bg-[#0B2015]/20 group-hover:bg-transparent transition duration-500 z-10"></div>
+                        <img src="./venue.jpg" alt="Akireyre Futsal Ground" class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition duration-700" onerror="this.onerror=null; this.src='https://placehold.co/600x400/e2e8f0/94a3b8?text=Venue+Photo';">
+                    </div>
+                </div>
+                
+                <!-- Small Card 1 (Now with Image) -->
+                <div class="bg-white rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl transition-all duration-300 flex flex-col group overflow-hidden">
+                    <div class="p-8 md:p-10 pb-6 flex-grow relative z-10 bg-white">
+                        <div class="w-14 h-14 bg-[#EAF4EC] text-[#499F31] rounded-2xl flex items-center justify-center mb-6 shadow-sm">
+                            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                        </div>
+                        <h3 class="font-black text-xl text-[#0B2015] mb-2 uppercase">Categories</h3>
+                        <p class="text-slate-500">Under 13 & Under 16<br><span class="text-[#499F31] font-medium text-sm">Futsal Division</span></p>
+                    </div>
+                    <!-- Categories Image Bottom -->
+                    <div class="relative h-40 md:h-48 overflow-hidden mt-auto">
+                        <div class="absolute inset-0 bg-[#0B2015]/10 group-hover:bg-transparent transition duration-500 z-10"></div>
+                        <img src="./categories.jpg" alt="Futsal Categories" class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition duration-700" onerror="this.onerror=null; this.src='https://placehold.co/400x400/e2e8f0/94a3b8?text=Categories+Photo';">
+                    </div>
+                </div>
+                
+                <!-- Small Card 2 (Spans full width on mobile, 1 col on desktop) -->
+                <div class="md:col-span-3 bg-gradient-to-r from-[#0B2015] to-[#143B26] rounded-3xl p-8 md:p-10 shadow-lg text-white flex flex-col md:flex-row items-center justify-between relative overflow-hidden">
+                    <div class="absolute right-0 top-0 w-64 h-64 bg-[#A1D028] opacity-10 rounded-full blur-[80px]"></div>
+                    <div class="mb-6 md:mb-0 relative z-10">
+                        <h3 class="font-black text-2xl md:text-3xl text-[#A1D028] mb-2 uppercase">Prizes</h3>
+                        <p class="text-slate-300 text-lg">Up to MVR 3,000 & Individual Awards</p>
+                    </div>
+                    <div class="relative z-10">
+                        <a href="#rules" class="bg-white text-[#0B2015] hover:bg-[#A1D028] px-8 py-3 rounded-full font-bold transition-colors inline-block">See Prize Breakdown</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modern Rules Section & Prize Breakdown -->
+    <section id="rules" class="py-20 md:py-32 bg-[#08170f] rounded-[2.5rem] md:rounded-[4rem] mx-2 md:mx-4 shadow-inner mb-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-[#A1D028] font-bold tracking-widest uppercase text-sm">The Rulebook & Rewards</span>
+                <h2 class="text-3xl md:text-5xl font-black text-white mt-2 mb-4 uppercase">Tournament Rules</h2>
+                <p class="text-slate-400 max-w-2xl mx-auto">Quick summary of the key regulations and prizes for the 2026 championship.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-6 mb-12">
+                <!-- Squad Card -->
+                <div class="bg-[#0B2015] p-8 rounded-3xl border border-[#1f5939]/50 hover:border-[#A1D028]/50 transition-colors">
+                    <div class="w-12 h-12 rounded-xl bg-[#143B26] flex items-center justify-center text-[#A1D028] mb-6"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg></div>
+                    <h3 class="text-xl font-black mb-4 text-white uppercase">Squad Size</h3>
+                    <ul class="space-y-3 text-slate-300 text-sm">
+                        <li class="flex items-start"><span class="text-[#A1D028] mr-2 font-bold">✓</span> <span><strong class="text-white mr-1">Players:</strong> 12 per team</span></li>
+                        <li class="flex items-start"><span class="text-[#A1D028] mr-2 font-bold">✓</span> <span><strong class="text-white mr-1">Officials:</strong> 4 per team</span></li>
+                        <li class="flex items-start"><span class="text-[#A1D028] mr-2 font-bold">✓</span> <span><strong class="text-white mr-1">Locals:</strong> Max 1 out-of-island player</span></li>
+                    </ul>
+                </div>
+                
+                <!-- Format Card -->
+                <div class="bg-[#0B2015] p-8 rounded-3xl border border-[#1f5939]/50 hover:border-[#A1D028]/50 transition-colors">
+                    <div class="w-12 h-12 rounded-xl bg-[#143B26] flex items-center justify-center text-[#A1D028] mb-6"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div>
+                    <h3 class="text-xl font-black mb-4 text-white uppercase">Match Format</h3>
+                    <ul class="space-y-3 text-slate-300 text-sm">
+                        <li class="flex items-start"><span class="text-[#A1D028] mr-2 font-bold">✓</span> <span><strong class="text-white mr-1">Time:</strong> Two 20-min halves</span></li>
+                        <li class="flex items-start"><span class="text-[#A1D028] mr-2 font-bold">✓</span> <span><strong class="text-white mr-1">Subs:</strong> Unlimited rolling subs</span></li>
+                        <li class="flex items-start"><span class="text-[#A1D028] mr-2 font-bold">✓</span> <span><strong class="text-white mr-1">Breaks:</strong> One 1-min timeout/half</span></li>
+                    </ul>
+                </div>
+
+                <!-- Eligibility Card -->
+                <div class="bg-[#0B2015] p-8 rounded-3xl border border-[#1f5939]/50 hover:border-[#A1D028]/50 transition-colors">
+                    <div class="w-12 h-12 rounded-xl bg-[#143B26] flex items-center justify-center text-[#A1D028] mb-6"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div>
+                    <h3 class="text-xl font-black mb-4 text-white uppercase">Eligibility & Fees</h3>
+                    <ul class="space-y-3 text-slate-300 text-sm">
+                        <li class="flex items-start"><span class="text-[#A1D028] mr-2 font-bold">✓</span> <span><strong class="text-white mr-1">U16:</strong> Born after Jan 1, 2010</span></li>
+                        <li class="flex items-start"><span class="text-[#A1D028] mr-2 font-bold">✓</span> <span><strong class="text-white mr-1">U13:</strong> Born after Jan 1, 2013</span></li>
+                        <li class="flex items-start"><span class="text-[#A1D028] mr-2 font-bold">✓</span> <span><strong class="text-white mr-1">Fee:</strong> 100% Free Entry</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Prize Breakdown Box inside Rules -->
+            <div class="bg-gradient-to-br from-[#143B26] to-[#0B2015] p-8 rounded-3xl border border-[#1f5939]/50 relative overflow-hidden">
+                <div class="absolute right-0 bottom-0 opacity-10 text-9xl">🏆</div>
+                <h3 class="text-2xl font-black mb-6 text-[#A1D028] uppercase">Prize Breakdown</h3>
+                <div class="grid sm:grid-cols-2 gap-6 relative z-10">
+                    <div class="bg-black/20 backdrop-blur-sm p-6 rounded-2xl border border-white/5 hover:bg-black/30 transition">
+                        <span class="font-black text-white text-xl block mb-4 border-b border-white/10 pb-2">U16 DIVISION</span>
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-slate-300">Champion</span>
+                            <span class="text-[#A1D028] font-black text-xl">MVR 3,000</span>
+                        </div>
+                        <div class="flex justify-between items-center text-sm">
+                            <span class="text-slate-400">Runner-up</span>
+                            <span class="text-white font-bold">MVR 1,000</span>
+                        </div>
+                    </div>
+                    <div class="bg-black/20 backdrop-blur-sm p-6 rounded-2xl border border-white/5 hover:bg-black/30 transition">
+                        <span class="font-black text-white text-xl block mb-4 border-b border-white/10 pb-2">U13 DIVISION</span>
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-slate-300">Champion</span>
+                            <span class="text-[#A1D028] font-black text-xl">MVR 1,500</span>
+                        </div>
+                        <div class="flex justify-between items-center text-sm">
+                            <span class="text-slate-400">Runner-up</span>
+                            <span class="text-white font-bold">MVR 500</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Participating Teams Profile Section -->
+    <section id="teams" class="py-20 md:py-32 bg-slate-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-[#499F31] font-bold tracking-widest uppercase text-sm">Meet the Squads</span>
+                <h2 class="text-3xl md:text-5xl font-black text-[#0B2015] mt-2 mb-6 uppercase">Team Profiles</h2>
+                <p class="text-slate-500 max-w-2xl mx-auto text-lg">Click on any team logo to view their official tournament roster and player profiles.</p>
+            </div>
+            
+            <!-- U16 Teams (8 Teams) -->
+            <div class="mb-20">
+                <h3 class="text-2xl font-black text-[#0B2015] mb-8 uppercase flex items-center justify-center md:justify-start gap-3 border-b border-slate-200 pb-4">
+                    <span class="w-10 h-10 rounded-xl bg-[#A1D028] flex items-center justify-center text-[#0B2015] text-xl shadow-sm">⚽</span>
+                    Under 16 Division
+                </h3>
+                
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+                    <!-- U16 Team Cards -->
+                    <div onclick="openTeamProfile('u16-1')" class="bg-white rounded-3xl p-6 shadow-sm border border-slate-100 hover:shadow-xl hover:border-[#A1D028] transition-all duration-300 cursor-pointer flex flex-col items-center text-center group">
+                        <img src="https://placehold.co/200x200/0B2015/A1D028?text=T1" alt="Team 1 Logo" class="w-20 h-20 md:w-28 md:h-28 rounded-full mb-4 object-cover transform group-hover:scale-110 transition duration-500 shadow-md border-4 border-slate-50 group-hover:border-[#A1D028]/20">
+                        <h4 class="font-black text-sm md:text-lg text-[#0B2015] uppercase leading-tight">U16 Team 1</h4>
+                        <span class="text-[10px] md:text-xs font-bold text-[#499F31] mt-2 uppercase tracking-widest bg-[#EAF4EC] px-3 py-1 rounded-full group-hover:bg-[#A1D028] group-hover:text-[#0B2015] transition-colors">View Squad</span>
+                    </div>
+                    <div onclick="openTeamProfile('u16-2')" class="bg-white rounded-3xl p-6 shadow-sm border border-slate-100 hover:shadow-xl hover:border-[#A1D028] transition-all duration-300 cursor-pointer flex flex-col items-center text-center group">
+                        <img src="https://placehold.co/200x200/0B2015/A1D028?text=T2" alt="Team 2 Logo" class="w-20 h-20 md:w-28 md:h-28 rounded-full mb-4 object-cover transform group-hover:scale-110 transition duration-500 shadow-md border-4 border-slate-50 group-hover:border-[#A1D028]/20">
+                        <h4 class="font-black text-sm md:text-lg text-[#0B2015] uppercase leading-tight">U16 Team 2</h4>
+                        <span class="text-[10px] md:text-xs font-bold text-[#499F31] mt-2 uppercase tracking-widest bg-[#EAF4EC] px-3 py-1 rounded-full group-hover:bg-[#A1D028] group-hover:text-[#0B2015] transition-colors">View Squad</span>
+                    </div>
+                    <div onclick="openTeamProfile('u16-3')" class="bg-white rounded-3xl p-6 shadow-sm border border-slate-100 hover:shadow-xl hover:border-[#A1D028] transition-all duration-300 cursor-pointer flex flex-col items-center text-center group">
+                        <img src="https://placehold.co/200x200/0B2015/A1D028?text=T3" alt="Team 3 Logo" class="w-20 h-20 md:w-28 md:h-28 rounded-full mb-4 object-cover transform group-hover:scale-110 transition duration-500 shadow-md border-4 border-slate-50 group-hover:border-[#A1D028]/20">
+                        <h4 class="font-black text-sm md:text-lg text-[#0B2015] uppercase leading-tight">U16 Team 3</h4>
+                        <span class="text-[10px] md:text-xs font-bold text-[#499F31] mt-2 uppercase tracking-widest bg-[#EAF4EC] px-3 py-1 rounded-full group-hover:bg-[#A1D028] group-hover:text-[#0B2015] transition-colors">View Squad</span>
+                    </div>
+                    <div onclick="openTeamProfile('u16-4')" class="bg-white rounded-3xl p-6 shadow-sm border border-slate-100 hover:shadow-xl hover:border-[#A1D028] transition-all duration-300 cursor-pointer flex flex-col items-center text-center group">
+                        <img src="https://placehold.co/200x200/0B2015/A1D028?text=T4" alt="Team 4 Logo" class="w-20 h-20 md:w-28 md:h-28 rounded-full mb-4 object-cover transform group-hover:scale-110 transition duration-500 shadow-md border-4 border-slate-50 group-hover:border-[#A1D028]/20">
+                        <h4 class="font-black text-sm md:text-lg text-[#0B2015] uppercase leading-tight">U16 Team 4</h4>
+                        <span class="text-[10px] md:text-xs font-bold text-[#499F31] mt-2 uppercase tracking-widest bg-[#EAF4EC] px-3 py-1 rounded-full group-hover:bg-[#A1D028] group-hover:text-[#0B2015] transition-colors">View Squad</span>
+                    </div>
+                    <div onclick="openTeamProfile('u16-5')" class="bg-white rounded-3xl p-6 shadow-sm border border-slate-100 hover:shadow-xl hover:border-[#A1D028] transition-all duration-300 cursor-pointer flex flex-col items-center text-center group">
+                        <img src="https://placehold.co/200x200/0B2015/A1D028?text=T5" alt="Team 5 Logo" class="w-20 h-20 md:w-28 md:h-28 rounded-full mb-4 object-cover transform group-hover:scale-110 transition duration-500 shadow-md border-4 border-slate-50 group-hover:border-[#A1D028]/20">
+                        <h4 class="font-black text-sm md:text-lg text-[#0B2015] uppercase leading-tight">U16 Team 5</h4>
+                        <span class="text-[10px] md:text-xs font-bold text-[#499F31] mt-2 uppercase tracking-widest bg-[#EAF4EC] px-3 py-1 rounded-full group-hover:bg-[#A1D028] group-hover:text-[#0B2015] transition-colors">View Squad</span>
+                    </div>
+                    <div onclick="openTeamProfile('u16-6')" class="bg-white rounded-3xl p-6 shadow-sm border border-slate-100 hover:shadow-xl hover:border-[#A1D028] transition-all duration-300 cursor-pointer flex flex-col items-center text-center group">
+                        <img src="https://placehold.co/200x200/0B2015/A1D028?text=T6" alt="Team 6 Logo" class="w-20 h-20 md:w-28 md:h-28 rounded-full mb-4 object-cover transform group-hover:scale-110 transition duration-500 shadow-md border-4 border-slate-50 group-hover:border-[#A1D028]/20">
+                        <h4 class="font-black text-sm md:text-lg text-[#0B2015] uppercase leading-tight">U16 Team 6</h4>
+                        <span class="text-[10px] md:text-xs font-bold text-[#499F31] mt-2 uppercase tracking-widest bg-[#EAF4EC] px-3 py-1 rounded-full group-hover:bg-[#A1D028] group-hover:text-[#0B2015] transition-colors">View Squad</span>
+                    </div>
+                    <div onclick="openTeamProfile('u16-7')" class="bg-white rounded-3xl p-6 shadow-sm border border-slate-100 hover:shadow-xl hover:border-[#A1D028] transition-all duration-300 cursor-pointer flex flex-col items-center text-center group">
+                        <img src="https://placehold.co/200x200/0B2015/A1D028?text=T7" alt="Team 7 Logo" class="w-20 h-20 md:w-28 md:h-28 rounded-full mb-4 object-cover transform group-hover:scale-110 transition duration-500 shadow-md border-4 border-slate-50 group-hover:border-[#A1D028]/20">
+                        <h4 class="font-black text-sm md:text-lg text-[#0B2015] uppercase leading-tight">U16 Team 7</h4>
+                        <span class="text-[10px] md:text-xs font-bold text-[#499F31] mt-2 uppercase tracking-widest bg-[#EAF4EC] px-3 py-1 rounded-full group-hover:bg-[#A1D028] group-hover:text-[#0B2015] transition-colors">View Squad</span>
+                    </div>
+                    <div onclick="openTeamProfile('u16-8')" class="bg-white rounded-3xl p-6 shadow-sm border border-slate-100 hover:shadow-xl hover:border-[#A1D028] transition-all duration-300 cursor-pointer flex flex-col items-center text-center group">
+                        <img src="https://placehold.co/200x200/0B2015/A1D028?text=T8" alt="Team 8 Logo" class="w-20 h-20 md:w-28 md:h-28 rounded-full mb-4 object-cover transform group-hover:scale-110 transition duration-500 shadow-md border-4 border-slate-50 group-hover:border-[#A1D028]/20">
+                        <h4 class="font-black text-sm md:text-lg text-[#0B2015] uppercase leading-tight">U16 Team 8</h4>
+                        <span class="text-[10px] md:text-xs font-bold text-[#499F31] mt-2 uppercase tracking-widest bg-[#EAF4EC] px-3 py-1 rounded-full group-hover:bg-[#A1D028] group-hover:text-[#0B2015] transition-colors">View Squad</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- U13 Teams (8 Teams) -->
+            <div>
+                <h3 class="text-2xl font-black text-[#0B2015] mb-8 uppercase flex items-center justify-center md:justify-start gap-3 border-b border-slate-200 pb-4">
+                    <span class="w-10 h-10 rounded-xl bg-[#499F31] flex items-center justify-center text-white text-xl shadow-sm">⚽</span>
+                    Under 13 Division
+                </h3>
+                
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+                    <!-- U13 Team Cards -->
+                    <div onclick="openTeamProfile('u13-1')" class="bg-white rounded-3xl p-6 shadow-sm border border-slate-100 hover:shadow-xl hover:border-[#499F31] transition-all duration-300 cursor-pointer flex flex-col items-center text-center group">
+                        <img src="https://placehold.co/200x200/08170f/499F31?text=T1" alt="Team 1 Logo" class="w-20 h-20 md:w-28 md:h-28 rounded-full mb-4 object-cover transform group-hover:scale-110 transition duration-500 shadow-md border-4 border-slate-50 group-hover:border-[#499F31]/20">
+                        <h4 class="font-black text-sm md:text-lg text-[#0B2015] uppercase leading-tight">U13 Team 1</h4>
+                        <span class="text-[10px] md:text-xs font-bold text-[#499F31] mt-2 uppercase tracking-widest bg-[#EAF4EC] px-3 py-1 rounded-full group-hover:bg-[#499F31] group-hover:text-white transition-colors">View Squad</span>
+                    </div>
+                    <div onclick="openTeamProfile('u13-2')" class="bg-white rounded-3xl p-6 shadow-sm border border-slate-100 hover:shadow-xl hover:border-[#499F31] transition-all duration-300 cursor-pointer flex flex-col items-center text-center group">
+                        <img src="https://placehold.co/200x200/08170f/499F31?text=T2" alt="Team 2 Logo" class="w-20 h-20 md:w-28 md:h-28 rounded-full mb-4 object-cover transform group-hover:scale-110 transition duration-500 shadow-md border-4 border-slate-50 group-hover:border-[#499F31]/20">
+                        <h4 class="font-black text-sm md:text-lg text-[#0B2015] uppercase leading-tight">U13 Team 2</h4>
+                        <span class="text-[10px] md:text-xs font-bold text-[#499F31] mt-2 uppercase tracking-widest bg-[#EAF4EC] px-3 py-1 rounded-full group-hover:bg-[#499F31] group-hover:text-white transition-colors">View Squad</span>
+                    </div>
+                    <div onclick="openTeamProfile('u13-3')" class="bg-white rounded-3xl p-6 shadow-sm border border-slate-100 hover:shadow-xl hover:border-[#499F31] transition-all duration-300 cursor-pointer flex flex-col items-center text-center group">
+                        <img src="https://placehold.co/200x200/08170f/499F31?text=T3" alt="Team 3 Logo" class="w-20 h-20 md:w-28 md:h-28 rounded-full mb-4 object-cover transform group-hover:scale-110 transition duration-500 shadow-md border-4 border-slate-50 group-hover:border-[#499F31]/20">
+                        <h4 class="font-black text-sm md:text-lg text-[#0B2015] uppercase leading-tight">U13 Team 3</h4>
+                        <span class="text-[10px] md:text-xs font-bold text-[#499F31] mt-2 uppercase tracking-widest bg-[#EAF4EC] px-3 py-1 rounded-full group-hover:bg-[#499F31] group-hover:text-white transition-colors">View Squad</span>
+                    </div>
+                    <div onclick="openTeamProfile('u13-4')" class="bg-white rounded-3xl p-6 shadow-sm border border-slate-100 hover:shadow-xl hover:border-[#499F31] transition-all duration-300 cursor-pointer flex flex-col items-center text-center group">
+                        <img src="https://placehold.co/200x200/08170f/499F31?text=T4" alt="Team 4 Logo" class="w-20 h-20 md:w-28 md:h-28 rounded-full mb-4 object-cover transform group-hover:scale-110 transition duration-500 shadow-md border-4 border-slate-50 group-hover:border-[#499F31]/20">
+                        <h4 class="font-black text-sm md:text-lg text-[#0B2015] uppercase leading-tight">U13 Team 4</h4>
+                        <span class="text-[10px] md:text-xs font-bold text-[#499F31] mt-2 uppercase tracking-widest bg-[#EAF4EC] px-3 py-1 rounded-full group-hover:bg-[#499F31] group-hover:text-white transition-colors">View Squad</span>
+                    </div>
+                    <div onclick="openTeamProfile('u13-5')" class="bg-white rounded-3xl p-6 shadow-sm border border-slate-100 hover:shadow-xl hover:border-[#499F31] transition-all duration-300 cursor-pointer flex flex-col items-center text-center group">
+                        <img src="https://placehold.co/200x200/08170f/499F31?text=T5" alt="Team 5 Logo" class="w-20 h-20 md:w-28 md:h-28 rounded-full mb-4 object-cover transform group-hover:scale-110 transition duration-500 shadow-md border-4 border-slate-50 group-hover:border-[#499F31]/20">
+                        <h4 class="font-black text-sm md:text-lg text-[#0B2015] uppercase leading-tight">U13 Team 5</h4>
+                        <span class="text-[10px] md:text-xs font-bold text-[#499F31] mt-2 uppercase tracking-widest bg-[#EAF4EC] px-3 py-1 rounded-full group-hover:bg-[#499F31] group-hover:text-white transition-colors">View Squad</span>
+                    </div>
+                    <div onclick="openTeamProfile('u13-6')" class="bg-white rounded-3xl p-6 shadow-sm border border-slate-100 hover:shadow-xl hover:border-[#499F31] transition-all duration-300 cursor-pointer flex flex-col items-center text-center group">
+                        <img src="https://placehold.co/200x200/08170f/499F31?text=T6" alt="Team 6 Logo" class="w-20 h-20 md:w-28 md:h-28 rounded-full mb-4 object-cover transform group-hover:scale-110 transition duration-500 shadow-md border-4 border-slate-50 group-hover:border-[#499F31]/20">
+                        <h4 class="font-black text-sm md:text-lg text-[#0B2015] uppercase leading-tight">U13 Team 6</h4>
+                        <span class="text-[10px] md:text-xs font-bold text-[#499F31] mt-2 uppercase tracking-widest bg-[#EAF4EC] px-3 py-1 rounded-full group-hover:bg-[#499F31] group-hover:text-white transition-colors">View Squad</span>
+                    </div>
+                    <div onclick="openTeamProfile('u13-7')" class="bg-white rounded-3xl p-6 shadow-sm border border-slate-100 hover:shadow-xl hover:border-[#499F31] transition-all duration-300 cursor-pointer flex flex-col items-center text-center group">
+                        <img src="https://placehold.co/200x200/08170f/499F31?text=T7" alt="Team 7 Logo" class="w-20 h-20 md:w-28 md:h-28 rounded-full mb-4 object-cover transform group-hover:scale-110 transition duration-500 shadow-md border-4 border-slate-50 group-hover:border-[#499F31]/20">
+                        <h4 class="font-black text-sm md:text-lg text-[#0B2015] uppercase leading-tight">U13 Team 7</h4>
+                        <span class="text-[10px] md:text-xs font-bold text-[#499F31] mt-2 uppercase tracking-widest bg-[#EAF4EC] px-3 py-1 rounded-full group-hover:bg-[#499F31] group-hover:text-white transition-colors">View Squad</span>
+                    </div>
+                    <div onclick="openTeamProfile('u13-8')" class="bg-white rounded-3xl p-6 shadow-sm border border-slate-100 hover:shadow-xl hover:border-[#499F31] transition-all duration-300 cursor-pointer flex flex-col items-center text-center group">
+                        <img src="https://placehold.co/200x200/08170f/499F31?text=T8" alt="Team 8 Logo" class="w-20 h-20 md:w-28 md:h-28 rounded-full mb-4 object-cover transform group-hover:scale-110 transition duration-500 shadow-md border-4 border-slate-50 group-hover:border-[#499F31]/20">
+                        <h4 class="font-black text-sm md:text-lg text-[#0B2015] uppercase leading-tight">U13 Team 8</h4>
+                        <span class="text-[10px] md:text-xs font-bold text-[#499F31] mt-2 uppercase tracking-widest bg-[#EAF4EC] px-3 py-1 rounded-full group-hover:bg-[#499F31] group-hover:text-white transition-colors">View Squad</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Match Fixtures Section -->
+    <section id="fixtures" class="py-20 md:py-32 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-[#499F31] font-bold tracking-widest uppercase text-sm">Schedule</span>
+                <h2 class="text-3xl md:text-5xl font-black text-[#0B2015] mt-2 uppercase">Match Fixtures</h2>
+            </div>
+            
+            <div class="max-w-4xl mx-auto space-y-4">
+                <!-- TBA Fixture Card -->
+                <div class="bg-slate-50 rounded-2xl p-4 md:p-6 flex flex-col md:flex-row items-center justify-between border border-slate-100 hover:border-[#A1D028] transition-colors shadow-sm opacity-70">
+                    <div class="flex flex-col text-center md:text-left mb-4 md:mb-0">
+                        <span class="text-xs font-bold text-[#499F31] tracking-widest uppercase mb-1">Group Stage • U16</span>
+                        <span class="text-slate-500 text-sm font-medium">Date & Time TBA</span>
+                    </div>
+                    
+                    <div class="flex items-center gap-4 md:gap-8 w-full md:w-auto justify-center">
+                        <span class="font-black text-lg md:text-xl text-slate-400 text-right w-24 md:w-32">TBD</span>
+                        <div class="bg-slate-200 text-slate-400 font-black px-4 py-2 rounded-xl text-lg">VS</div>
+                        <span class="font-black text-lg md:text-xl text-slate-400 text-left w-24 md:w-32">TBD</span>
+                    </div>
+                </div>
+
+                <!-- TBA Fixture Card -->
+                <div class="bg-slate-50 rounded-2xl p-4 md:p-6 flex flex-col md:flex-row items-center justify-between border border-slate-100 hover:border-[#A1D028] transition-colors shadow-sm opacity-70">
+                    <div class="flex flex-col text-center md:text-left mb-4 md:mb-0">
+                        <span class="text-xs font-bold text-blue-500 tracking-widest uppercase mb-1">Group Stage • U13</span>
+                        <span class="text-slate-500 text-sm font-medium">Date & Time TBA</span>
+                    </div>
+                    
+                    <div class="flex items-center gap-4 md:gap-8 w-full md:w-auto justify-center">
+                        <span class="font-black text-lg md:text-xl text-slate-400 text-right w-24 md:w-32">TBD</span>
+                        <div class="bg-slate-200 text-slate-400 font-black px-4 py-2 rounded-xl text-lg">VS</div>
+                        <span class="font-black text-lg md:text-xl text-slate-400 text-left w-24 md:w-32">TBD</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tournament Standings -->
+    <section id="standings" class="py-20 md:py-32 bg-[#0B2015] rounded-[2.5rem] md:rounded-[4rem] mx-2 md:mx-4 shadow-inner mb-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-[#A1D028] font-bold tracking-widest uppercase text-sm">Leaderboard</span>
+                <h2 class="text-3xl md:text-5xl font-black text-white mt-2 uppercase">Tournament Standings</h2>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-8">
+                <!-- U16 Table -->
+                <div class="bg-[#08170f] rounded-3xl p-6 border border-[#1f5939]/50 overflow-x-auto relative">
+                    <h3 class="text-xl font-black text-[#A1D028] mb-4 uppercase">U16 Group Stage</h3>
+                    <table class="w-full text-left text-white whitespace-nowrap opacity-50">
+                        <thead class="text-xs uppercase text-slate-400 border-b border-[#1f5939]">
+                            <tr>
+                                <th class="py-3 pr-4">Pos</th>
+                                <th class="py-3 w-full">Club</th>
+                                <th class="py-3 px-3 text-center">P</th>
+                                <th class="py-3 px-3 text-center">W</th>
+                                <th class="py-3 px-3 text-center">D</th>
+                                <th class="py-3 px-3 text-center">L</th>
+                                <th class="py-3 px-3 text-center">GD</th>
+                                <th class="py-3 pl-3 text-center text-[#A1D028]">Pts</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-sm font-medium">
+                            <tr class="border-b border-[#1f5939]/30">
+                                <td class="py-4 pr-4 text-slate-500 font-black">-</td>
+                                <td class="py-4 font-bold text-slate-400">TBA</td>
+                                <td class="py-4 px-3 text-center text-slate-500">0</td>
+                                <td class="py-4 px-3 text-center text-slate-500">0</td>
+                                <td class="py-4 px-3 text-center text-slate-500">0</td>
+                                <td class="py-4 px-3 text-center text-slate-500">0</td>
+                                <td class="py-4 px-3 text-center text-slate-500">0</td>
+                                <td class="py-4 pl-3 text-center text-slate-500 font-black text-base">0</td>
+                            </tr>
+                            <tr>
+                                <td class="py-4 pr-4 text-slate-500 font-black">-</td>
+                                <td class="py-4 font-bold text-slate-400">TBA</td>
+                                <td class="py-4 px-3 text-center text-slate-500">0</td>
+                                <td class="py-4 px-3 text-center text-slate-500">0</td>
+                                <td class="py-4 px-3 text-center text-slate-500">0</td>
+                                <td class="py-4 px-3 text-center text-slate-500">0</td>
+                                <td class="py-4 px-3 text-center text-slate-500">0</td>
+                                <td class="py-4 pl-3 text-center text-slate-500 font-black text-base">0</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- U13 Table -->
+                <div class="bg-[#08170f] rounded-3xl p-6 border border-[#1f5939]/50 overflow-x-auto relative">
+                    <h3 class="text-xl font-black text-[#A1D028] mb-4 uppercase">U13 Group Stage</h3>
+                    <table class="w-full text-left text-white whitespace-nowrap opacity-50">
+                        <thead class="text-xs uppercase text-slate-400 border-b border-[#1f5939]">
+                            <tr>
+                                <th class="py-3 pr-4">Pos</th>
+                                <th class="py-3 w-full">Club</th>
+                                <th class="py-3 px-3 text-center">P</th>
+                                <th class="py-3 px-3 text-center">W</th>
+                                <th class="py-3 px-3 text-center">D</th>
+                                <th class="py-3 px-3 text-center">L</th>
+                                <th class="py-3 px-3 text-center">GD</th>
+                                <th class="py-3 pl-3 text-center text-[#A1D028]">Pts</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-sm font-medium">
+                            <tr class="border-b border-[#1f5939]/30">
+                                <td class="py-4 pr-4 text-slate-500 font-black">-</td>
+                                <td class="py-4 font-bold text-slate-400">TBA</td>
+                                <td class="py-4 px-3 text-center text-slate-500">0</td>
+                                <td class="py-4 px-3 text-center text-slate-500">0</td>
+                                <td class="py-4 px-3 text-center text-slate-500">0</td>
+                                <td class="py-4 px-3 text-center text-slate-500">0</td>
+                                <td class="py-4 px-3 text-center text-slate-500">0</td>
+                                <td class="py-4 pl-3 text-center text-slate-500 font-black text-base">0</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sleek Gallery Section -->
+    <section id="gallery" class="py-20 md:py-32">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+                <div>
+                    <span class="text-[#499F31] font-bold tracking-widest uppercase text-sm">Hall of Fame</span>
+                    <h2 class="text-3xl md:text-5xl font-black text-[#0B2015] mt-2 uppercase">Previous Years</h2>
+                </div>
+                <p class="text-slate-500 mt-4 md:mt-0 max-w-sm text-left md:text-right">
+                    Highlights and glory from past Maidhaan Youth Championships.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
+                <!-- Image Cards with Modern Hover Effects -->
+                <div class="relative overflow-hidden rounded-[2rem] aspect-square group shadow-sm hover:shadow-2xl transition-all duration-500 bg-slate-200">
+                    <img src="./photo1.jpg" alt="Tournament action 1" class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-105 transition duration-700" onerror="this.onerror=null; this.src='https://placehold.co/600x600/e2e8f0/94a3b8?text=Photo+1';">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-500"></div>
+                </div>
+                <div class="relative overflow-hidden rounded-[2rem] aspect-square group shadow-sm hover:shadow-2xl transition-all duration-500 bg-slate-200">
+                    <img src="./photo2.jpg" alt="Tournament action 2" class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-105 transition duration-700" onerror="this.onerror=null; this.src='https://placehold.co/600x600/e2e8f0/94a3b8?text=Photo+2';">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-500"></div>
+                </div>
+                <div class="relative overflow-hidden rounded-[2rem] aspect-square group shadow-sm hover:shadow-2xl transition-all duration-500 bg-slate-200">
+                    <img src="./photo3.jpg" alt="Tournament action 3" class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-105 transition duration-700" onerror="this.onerror=null; this.src='https://placehold.co/600x600/e2e8f0/94a3b8?text=Photo+3';">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-500"></div>
+                </div>
+                <div class="relative overflow-hidden rounded-[2rem] aspect-square group shadow-sm hover:shadow-2xl transition-all duration-500 bg-slate-200">
+                    <img src="./photo4.jpg" alt="Tournament action 4" class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-105 transition duration-700" onerror="this.onerror=null; this.src='https://placehold.co/600x600/e2e8f0/94a3b8?text=Photo+4';">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-500"></div>
+                </div>
+                <div class="relative overflow-hidden rounded-[2rem] aspect-square group shadow-sm hover:shadow-2xl transition-all duration-500 bg-slate-200">
+                    <img src="./photo5.jpg" alt="Tournament action 5" class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-105 transition duration-700" onerror="this.onerror=null; this.src='https://placehold.co/600x600/e2e8f0/94a3b8?text=Photo+5';">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-500"></div>
+                </div>
+                <div class="relative overflow-hidden rounded-[2rem] aspect-square group shadow-sm hover:shadow-2xl transition-all duration-500 bg-slate-200">
+                    <img src="./photo6.jpg" alt="Tournament action 6" class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-105 transition duration-700" onerror="this.onerror=null; this.src='https://placehold.co/600x600/e2e8f0/94a3b8?text=Photo+6';">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-500"></div>
+                </div>
+                <div class="relative overflow-hidden rounded-[2rem] aspect-square group shadow-sm hover:shadow-2xl transition-all duration-500 bg-slate-200">
+                    <img src="./photo7.jpg" alt="Tournament action 7" class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-105 transition duration-700" onerror="this.onerror=null; this.src='https://placehold.co/600x600/e2e8f0/94a3b8?text=Photo+7';">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-500"></div>
+                </div>
+                <div class="relative overflow-hidden rounded-[2rem] aspect-square group shadow-sm hover:shadow-2xl transition-all duration-500 bg-slate-200">
+                    <img src="./photo8.jpg" alt="Tournament action 8" class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-105 transition duration-700" onerror="this.onerror=null; this.src='https://placehold.co/600x600/e2e8f0/94a3b8?text=Photo+8';">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-500"></div>
+                </div>
+                <div class="relative overflow-hidden rounded-[2rem] aspect-square group shadow-sm hover:shadow-2xl transition-all duration-500 bg-slate-200">
+                    <img src="./photo9.jpg" alt="Tournament action 9" class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-105 transition duration-700" onerror="this.onerror=null; this.src='https://placehold.co/600x600/e2e8f0/94a3b8?text=Photo+9';">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-500"></div>
+                </div>
+                <div class="relative overflow-hidden rounded-[2rem] aspect-square group shadow-sm hover:shadow-2xl transition-all duration-500 bg-slate-200">
+                    <img src="./photo10.jpg" alt="Tournament action 10" class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-105 transition duration-700" onerror="this.onerror=null; this.src='https://placehold.co/600x600/e2e8f0/94a3b8?text=Photo+10';">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-500"></div>
+                </div>
+                <div class="relative overflow-hidden rounded-[2rem] aspect-square group shadow-sm hover:shadow-2xl transition-all duration-500 bg-slate-200">
+                    <img src="./photo11.jpg" alt="Tournament action 11" class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-105 transition duration-700" onerror="this.onerror=null; this.src='https://placehold.co/600x600/e2e8f0/94a3b8?text=Photo+11';">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-500"></div>
+                </div>
+                <div class="relative overflow-hidden rounded-[2rem] aspect-square group shadow-sm hover:shadow-2xl transition-all duration-500 bg-slate-200">
+                    <img src="./photo12.jpg" alt="Tournament action 12" class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-105 transition duration-700" onerror="this.onerror=null; this.src='https://placehold.co/600x600/e2e8f0/94a3b8?text=Photo+12';">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-500"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Minimalist Footer -->
+    <footer id="contact" class="bg-white border-t border-slate-200 pt-16 pb-8">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 mb-16">
+                <div>
+                    <h3 class="text-3xl font-black mb-4 uppercase text-[#0B2015] tracking-tight">MAIDHAAN</h3>
+                    <p class="text-slate-500 mb-6 max-w-md leading-relaxed">Dedicated to fostering youth futsal, teamwork, and healthy competition, alongside organizing impactful community events that bring the people of Kudahuvadhoo together.</p>
+                </div>
+                <div class="md:text-right">
+                    <h3 class="text-sm font-bold mb-4 uppercase tracking-widest text-[#499F31]">Contact Us</h3>
+                    <ul class="space-y-4 text-slate-800 font-medium">
+                        <li class="flex items-center md:justify-end gap-3 hover:text-[#499F31] transition-colors cursor-pointer">
+                            maidhaansc@gmail.com
+                            <div class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-[#0B2015]"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg></div>
+                        </li>
+                        <li class="flex items-center md:justify-end gap-3 hover:text-[#499F31] transition-colors cursor-pointer">
+                            +960 9973027 / 9973025
+                            <div class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-[#0B2015]"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-slate-100 pt-8 flex flex-col md:flex-row justify-between items-center text-sm font-medium text-slate-400">
+                <p>&copy; 2026 MAIDHAAN. All rights reserved.</p>
+                <div class="mt-4 md:mt-0 flex space-x-6">
+                    <a href="#" class="hover:text-[#0B2015] transition-colors">Facebook</a>
+                    <a href="#" class="hover:text-[#0B2015] transition-colors">Instagram</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Team Profile Modal (Hidden by default) -->
+    <div id="teamProfileModal" class="fixed inset-0 z-[110] hidden flex items-center justify-center bg-slate-900/80 backdrop-blur-md opacity-0 transition-opacity duration-300 p-4">
+        <div class="bg-slate-50 rounded-[2.5rem] w-full max-w-5xl max-h-[90vh] overflow-hidden shadow-2xl transform scale-95 transition-transform duration-300 relative flex flex-col" id="teamProfileContent">
+            
+            <!-- Modal Header (Dynamic Logo & Name injected here) -->
+            <div class="bg-white border-b border-slate-200 px-6 py-6 md:px-10 flex justify-between items-center z-10">
+                <div class="flex items-center gap-4 md:gap-6" id="teamModalHeader">
+                    <!-- Javascript will fill this -->
+                </div>
+                <!-- Close Button -->
+                <button onclick="closeTeamProfile()" class="text-slate-400 hover:text-slate-800 bg-slate-100 hover:bg-slate-200 p-3 rounded-full transition-colors">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+            </div>
+            
+            <!-- Roster Content Area -->
+            <div class="p-6 md:p-10 overflow-y-auto">
+                <div class="flex items-center justify-between mb-8">
+                    <h3 class="text-2xl font-black text-[#0B2015] uppercase tracking-wide">Official Roster</h3>
+                    <span id="teamModalDivision" class="text-xs font-bold text-[#A1D028] bg-[#0B2015] px-4 py-2 rounded-xl tracking-widest uppercase">DIVISION</span>
+                </div>
+                
+                <!-- Player Grid -->
+                <div class="mb-10">
+                    <h4 class="text-sm font-bold text-slate-400 uppercase tracking-widest mb-4 pb-2 border-b border-slate-200">Players (12)</h4>
+                    <div id="playerGrid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 md:gap-4">
+                        <!-- Player Cards go here -->
+                    </div>
+                </div>
+
+                <!-- Officials Grid -->
+                <div>
+                    <h4 class="text-sm font-bold text-slate-400 uppercase tracking-widest mb-4 pb-2 border-b border-slate-200">Team Officials (4)</h4>
+                    <div id="officialGrid" class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                        <!-- Official Cards go here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Registration Modal -->
+    <div id="registerModal" class="fixed inset-0 z-[100] hidden flex items-center justify-center bg-slate-900/60 backdrop-blur-sm opacity-0 transition-opacity duration-300">
+        <div class="bg-white rounded-3xl p-8 md:p-10 w-full max-w-md mx-4 shadow-2xl transform scale-95 transition-transform duration-300 relative" id="modalContent">
+            <!-- Close Button -->
+            <button onclick="closeModal()" class="absolute top-6 right-6 text-slate-400 hover:text-slate-800 transition-colors">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+            
+            <h3 class="text-2xl font-black text-[#0B2015] mb-2 uppercase">Register Team</h3>
+            <p class="text-slate-500 mb-6 text-sm">Fill out the details below to enter the championship.</p>
+            
+            <form id="registrationForm" onsubmit="handleRegistration(event)">
+                <!-- FormSubmit Configuration -->
+                <input type="hidden" name="_subject" value="New Team Registration! - Maidhaan Youth Championship">
+                <input type="hidden" name="_captcha" value="false">
+                
+                <div class="mb-4">
+                    <label class="block text-slate-700 font-bold mb-2 text-xs uppercase tracking-widest" for="teamName">Team Name</label>
+                    <input class="w-full px-4 py-3 rounded-xl bg-slate-100 border border-transparent focus:border-[#A1D028] focus:bg-white focus:ring-2 focus:ring-[#A1D028]/20 transition-all outline-none text-slate-800" id="teamName" name="Team Name" type="text" required placeholder="e.g. Kudahuvadhoo Kings">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-slate-700 font-bold mb-2 text-xs uppercase tracking-widest" for="teamColor">Team Color</label>
+                    <input class="w-full px-4 py-3 rounded-xl bg-slate-100 border border-transparent focus:border-[#A1D028] focus:bg-white focus:ring-2 focus:ring-[#A1D028]/20 transition-all outline-none text-slate-800" id="teamColor" name="Team Color" type="text" required placeholder="e.g. Dark Green & Lime">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-slate-700 font-bold mb-2 text-xs uppercase tracking-widest" for="managerName">Manager Name</label>
+                    <input class="w-full px-4 py-3 rounded-xl bg-slate-100 border border-transparent focus:border-[#A1D028] focus:bg-white focus:ring-2 focus:ring-[#A1D028]/20 transition-all outline-none text-slate-800" id="managerName" name="Manager Name" type="text" required placeholder="e.g. Ahmed Ali">
+                </div>
+                <div class="mb-8">
+                    <label class="block text-slate-700 font-bold mb-2 text-xs uppercase tracking-widest" for="contactNumber">Contact Number</label>
+                    <input class="w-full px-4 py-3 rounded-xl bg-slate-100 border border-transparent focus:border-[#A1D028] focus:bg-white focus:ring-2 focus:ring-[#A1D028]/20 transition-all outline-none text-slate-800" id="contactNumber" name="Contact Number" type="tel" required placeholder="+960 9999999">
+                </div>
+                
+                <button type="submit" id="submitBtn" class="w-full bg-[#0B2015] text-[#A1D028] hover:bg-[#A1D028] hover:text-[#0B2015] font-black py-4 px-4 rounded-xl transition-all shadow-md hover:shadow-xl transform hover:-translate-y-0.5 uppercase tracking-widest">
+                    Submit Registration
+                </button>
+            </form>
+            
+            <!-- Success Message (Hidden by default) -->
+            <div id="successMessage" class="hidden text-center py-6">
+                <div class="w-20 h-20 bg-[#EAF4EC] text-[#499F31] rounded-full flex items-center justify-center mx-auto mb-6 shadow-sm">
+                    <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                </div>
+                <h4 class="text-2xl font-black text-[#0B2015] mb-2 uppercase">Registration Received!</h4>
+                <p class="text-slate-500 text-sm mb-8">We will contact you shortly to verify your details and confirm your spot.</p>
+                <button onclick="closeModal()" class="text-sm font-bold text-[#0B2015] bg-slate-100 hover:bg-slate-200 px-6 py-3 rounded-full transition-colors uppercase tracking-widest">Close Window</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript to handle Countdown & Modal -->
+    <script>
+        // --- MODAL LOGIC ---
+        const modal = document.getElementById('registerModal');
+        const modalContent = document.getElementById('modalContent');
+        const form = document.getElementById('registrationForm');
+        const successMsg = document.getElementById('successMessage');
+
+        function openModal() {
+            modal.classList.remove('hidden');
+            // Small delay to allow display:block to apply before animating opacity
+            setTimeout(() => {
+                modal.classList.remove('opacity-0');
+                modalContent.classList.remove('scale-95');
+            }, 10);
+        }
+
+        function closeModal() {
+            modal.classList.add('opacity-0');
+            modalContent.classList.add('scale-95');
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                // Reset form for next time
+                form.reset();
+                form.classList.remove('hidden');
+                successMsg.classList.add('hidden');
+            }, 300); // match duration-300
+        }
+
+        function handleRegistration(e) {
+            e.preventDefault();
+            
+            const submitBtn = document.getElementById('submitBtn');
+            const originalText = submitBtn.innerHTML;
+            
+            // Change button text so the user knows it's working
+            submitBtn.innerHTML = 'Sending...';
+            submitBtn.disabled = true;
+
+            // Collect form data
+            const formData = new FormData(form);
+
+            // Send data to FormSubmit
+            fetch("https://formsubmit.co/ajax/maidhaansc@gmail.com", {
+                method: "POST",
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Hide the form and show the success message
+                form.classList.add('hidden');
+                successMsg.classList.remove('hidden');
+                
+                // Reset button for next time
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+            })
+            .catch(error => {
+                alert("Something went wrong. Please try again or contact us directly at maidhaansc@gmail.com");
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+            });
+        }
+
+        // --- TEAM PROFILE DATABASE & LOGIC ---
+        // You can update player names and photos here later!
+        const tournamentTeams = {
+            "u16-1": {
+                name: "U16 Team 1",
+                division: "Under 16",
+                logo: "https://placehold.co/200x200/0B2015/A1D028?text=T1",
+                players: Array(12).fill().map((_, i) => ({
+                    name: `Player ${i + 1}`, number: i + 1, photo: "https://placehold.co/300x400/e2e8f0/94a3b8?text=Player"
+                })),
+                officials: [
+                    { name: "Ahmed Ali", role: "Manager", photo: "https://placehold.co/300x300/e2e8f0/94a3b8?text=Official" },
+                    { name: "Hassan Ziyad", role: "Coach", photo: "https://placehold.co/300x300/e2e8f0/94a3b8?text=Official" },
+                    { name: "Ibrahim Naseer", role: "Asst. Coach", photo: "https://placehold.co/300x300/e2e8f0/94a3b8?text=Official" },
+                    { name: "Mohamed Waheed", role: "Medic", photo: "https://placehold.co/300x300/e2e8f0/94a3b8?text=Official" }
+                ]
+            }
+            // Note: In a full app, you would add "u16-2", "u13-1", etc. here.
+            // For now, the Javascript below handles any team clicked by auto-generating dummy data if it isn't listed above!
+        };
+
+        const teamModal = document.getElementById('teamProfileModal');
+        const teamModalContent = document.getElementById('teamProfileContent');
+
+        function openTeamProfile(teamId) {
+            // Check if we have specific data for this team, otherwise create generic placeholder data
+            let teamData = tournamentTeams[teamId];
+            
+            if (!teamData) {
+                // Auto-generate placeholder data for teams not fully entered yet
+                const isU16 = teamId.startsWith('u16');
+                const teamNum = teamId.split('-')[1];
+                teamData = {
+                    name: `${isU16 ? 'U16' : 'U13'} Team ${teamNum}`,
+                    division: isU16 ? 'Under 16' : 'Under 13',
+                    logo: `https://placehold.co/200x200/${isU16 ? '0B2015/A1D028' : '08170f/499F31'}?text=T${teamNum}`,
+                    players: Array(12).fill().map((_, i) => ({
+                        name: `Player ${i + 1}`,
+                        number: Math.floor(Math.random() * 99) + 1,
+                        photo: "https://placehold.co/300x400/e2e8f0/94a3b8?text=Player"
+                    })),
+                    officials: Array(4).fill().map((_, i) => ({
+                        name: `Official ${i + 1}`,
+                        role: ["Manager", "Coach", "Asst. Coach", "Medic"][i],
+                        photo: "https://placehold.co/300x300/e2e8f0/94a3b8?text=Official"
+                    }))
+                };
+            }
+
+            // 1. Update Header (Logo & Name)
+            document.getElementById('teamModalHeader').innerHTML = `
+                <img src="${teamData.logo}" alt="${teamData.name} Logo" class="w-16 h-16 md:w-20 md:h-20 rounded-full border-4 border-slate-100 shadow-sm object-cover">
+                <div>
+                    <h2 class="text-xl md:text-3xl font-black text-[#0B2015] uppercase tracking-tight">${teamData.name}</h2>
+                    <p class="text-slate-500 text-sm font-medium mt-1">2026 Tournament Roster</p>
+                </div>
+            `;
+            
+            // 2. Update Division Badge
+            document.getElementById('teamModalDivision').innerText = teamData.division;
+
+            // 3. Populate Player Grid
+            const grid = document.getElementById('playerGrid');
+            grid.innerHTML = ''; // Clear old players
+            
+            teamData.players.forEach(player => {
+                grid.innerHTML += `
+                    <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-slate-100 hover:shadow-md transition duration-300 group">
+                        <!-- Passport Photo -->
+                        <div class="aspect-[3/4] overflow-hidden relative bg-slate-200">
+                            <img src="${player.photo}" alt="${player.name}" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500">
+                            <!-- Jersey Number Bubble -->
+                            <div class="absolute bottom-2 right-2 bg-[#0B2015] text-[#A1D028] w-7 h-7 rounded-full flex items-center justify-center font-black text-xs border-2 border-white shadow-md">
+                                ${player.number}
+                            </div>
+                        </div>
+                        <!-- Player Details -->
+                        <div class="p-2 text-center">
+                            <h5 class="font-bold text-[#0B2015] text-[11px] md:text-xs uppercase truncate" title="${player.name}">${player.name}</h5>
+                        </div>
+                    </div>
+                `;
+            });
+
+            // 4. Populate Official Grid
+            const offGrid = document.getElementById('officialGrid');
+            offGrid.innerHTML = ''; // Clear old officials
+            
+            teamData.officials.forEach(official => {
+                offGrid.innerHTML += `
+                    <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-slate-100 hover:shadow-md transition duration-300 group flex flex-col items-center p-4">
+                        <img src="${official.photo}" alt="${official.name}" class="w-14 h-14 md:w-16 md:h-16 rounded-full object-cover mb-3 shadow-sm transform group-hover:scale-105 transition duration-500 border border-slate-200">
+                        <h5 class="font-bold text-[#0B2015] text-xs uppercase text-center w-full truncate" title="${official.name}">${official.name}</h5>
+                        <span class="text-[10px] font-bold text-[#499F31] bg-[#EAF4EC] px-2 py-0.5 rounded-full mt-1 uppercase tracking-widest">${official.role}</span>
+                    </div>
+                `;
+            });
+
+            // 5. Show the Modal with Animation
+            teamModal.classList.remove('hidden');
+            setTimeout(() => {
+                teamModal.classList.remove('opacity-0');
+                teamModalContent.classList.remove('scale-95');
+            }, 10);
+            
+            // Prevent background scrolling
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeTeamProfile() {
+            teamModal.classList.add('opacity-0');
+            teamModalContent.classList.add('scale-95');
+            setTimeout(() => {
+                teamModal.classList.add('hidden');
+            }, 300);
+            
+            // Restore background scrolling
+            document.body.style.overflow = 'auto';
+        }
+
+        // --- COUNTDOWN LOGIC ---
+        const countDownDate = new Date("July 16, 2026 16:00:00").getTime();
+
+        const x = setInterval(function() {
+            const now = new Date().getTime();
+            const distance = countDownDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("days").innerHTML = days < 10 ? "0" + days : days;
+            document.getElementById("hours").innerHTML = hours < 10 ? "0" + hours : hours;
+            document.getElementById("minutes").innerHTML = minutes < 10 ? "0" + minutes : minutes;
+            document.getElementById("seconds").innerHTML = seconds < 10 ? "0" + seconds : seconds;
+
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("days").innerHTML = "00";
+                document.getElementById("hours").innerHTML = "00";
+                document.getElementById("minutes").innerHTML = "00";
+                document.getElementById("seconds").innerHTML = "00";
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
